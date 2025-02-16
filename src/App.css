@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+.bg-gradient{
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active{
+  color: rgb(8, 190, 129);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slick-slide > div{
+  margin: 0 50px;
+}
+.slick-list{
+  margin: 0 -50px;
+}
+
+.get-started{
+  animation: outlineAnimation 2s infinite;
+}
+@keyframes outlineAnimation {
+  0% {
+    outline: 2px solid transparent;
+    outline-offset: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  50% {
+    outline: 2px solid #adafb0;
+    outline-offset: 4px; 
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    outline: 2px solid transparent;
+    outline-offset: 0;
   }
 }
