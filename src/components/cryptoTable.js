@@ -18,7 +18,7 @@ export default function CoinsTable() {
   const tableData = Array.isArray(data) ? data.slice(startIndex, endIndex) : [];
 
   const handleCoinClick = (coinId) => {
-    navigate(`/SingleCoinPage/${coinId}`);
+    navigate(`/Coin/${coinId}`);
   };
 
   const handleNextPage = () => {
@@ -39,7 +39,7 @@ export default function CoinsTable() {
   return (
     <section className="px-[2.3rem] mx-auto w-full md:w-[80%] md:px-4 py-4 mt-10">
       <h2 className='text-yellow-600 text-2xl md:text-3xl font-bold text-center md:text-left'>
-        Cryptocurrencies Information By MarketCap:
+        Top 15 Cryptocurrencies By MarketCap:
       </h2>
 
       <div className="mt-6 flex flex-col">
@@ -89,7 +89,7 @@ export default function CoinsTable() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center pt-6">
+      {/* <div className="flex items-center justify-center pt-6">
         <button
           className="mx-1 cursor-pointer text-sm font-semibold text-white disabled:opacity-50"
           onClick={handlePreviousPage}
@@ -104,7 +104,7 @@ export default function CoinsTable() {
         >
           Next &rarr;
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }

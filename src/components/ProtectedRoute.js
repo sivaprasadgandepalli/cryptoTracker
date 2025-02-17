@@ -6,7 +6,7 @@ export const ProtectedRoute = ({ children }) => {
 
     if (loading) return <CryptoLoader />;
     if (!user) {
-        return <Navigate to="/signInPage" />
+        return <Navigate to="/SignIn" />
     }
     return children;
 };

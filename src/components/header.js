@@ -35,7 +35,7 @@ export default function Header() {
 
     return (
         <div className='w-full relative'>
-            <header className='flex items-center justify-between px-3 py-4 lg:px-[5rem] md:py-5 shadow-blue-900 shadow-sm'>
+            <header className='w-full flex items-center justify-between px-3 py-4 lg:px-[5rem] md:py-5 shadow-emerald-700 shadow-sm'>
                 <div className='flex items-center gap-x-[0.25rem] text-[#f8f8ff] font-bold'>
                     <img src={logo} className='h-8 w-8 md:h-10 md:w-10 cursor-pointer' referrerPolicy="no-referrer" alt='logo' />
                     <span className='text-[1.2rem] md:text-[1.4rem] italic'>Crypto<span className='text-emerald-500'>Trackr</span></span>
@@ -48,7 +48,7 @@ export default function Header() {
                 </div>
 
                 <div className='flex gap-x-2 md:gap-x-3 items-center'>
-                    <select onChange={handleChange} className='hidden md:block px-[2px] py-[2px] md:py-[4px] md:px-2 text-[0.8rem] rounded-md bg-[#000435] text-[#f8f8ff] border-[1px]'>
+                    <select onChange={handleChange} className='px-[2px] py-[2px] md:py-[4px] md:px-2 text-[0.8rem] rounded-md bg-[#000435] text-[#f8f8ff] border-[1px]'>
                         <option value='USD'>USD</option>
                         <option value='INR'>INR</option>
                     </select>
