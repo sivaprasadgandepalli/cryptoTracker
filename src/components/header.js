@@ -17,7 +17,7 @@ export default function Header() {
     };
 
     const handleLogin = () => {
-        window.location.href = '/signInPage';
+        window.location.href = '/SignIn';
     };
 
     const handleProfile = () => {
@@ -26,7 +26,7 @@ export default function Header() {
 
     const handleLogout = async () => {
         await logout();
-        window.location.href = "/signInPage";
+        window.location.href = "/SignIn";
     };
 
     useEffect(() => {
