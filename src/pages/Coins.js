@@ -16,8 +16,8 @@ export default function Coins() {
   const [page, setPage] = useState(1);
   const navigate = useNavigate();
 
-  const handleCoinClick = (id) => {
-    navigate('/SingleCoinPage', { state: { coinId: id, currency: currency } });
+  const handleCoinClick = (coinId) => {
+    navigate(`/Coin/${coinId}`,);
   };
 
   const filteredCoins = data?.filter(coin => {
@@ -42,7 +42,7 @@ export default function Coins() {
   const paginatedCoins = filteredCoins.slice((page - 1) * 20, page * 20);
 
   if (loading) return <CryptoLoader />;
-  if (error) return <div className="w-full flex items-center justify-center text-red-500">
+  if (error) return <div className="w-full flex items-center justify-center min-h-screen">
       <p>Error loading data. Please try again.</p>
     </div>;
 

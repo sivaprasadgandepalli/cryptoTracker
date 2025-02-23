@@ -57,10 +57,11 @@ const Carousel = () => {
     };
 
     if (loading) return <CryptoLoader />;
-    if (error) return <p className="text-red-500 text-center">Error loading data</p>;
+    if (error) return <p className="">Error loading data</p>;
 
     return (
         <div className="mx-auto w-[80%]" role="region" aria-label="Cryptocurrency carousel">
+            <h2 className='text-2xl md:text-4xl text-yellow-600 font-bold mb-10 underline underline-offset-4'>Trending Coins</h2>
             <Slider {...settings}>
                 {data.length > 0 ? data.map((item) => (
                     <div

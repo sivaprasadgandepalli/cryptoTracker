@@ -13,7 +13,6 @@ export default function Home() {
             </div>
 
             <div className='w-full text-center my-5 px-4 md:px-0'>
-                <h2 className='text-2xl md:text-4xl text-yellow-600 font-bold mb-10 underline underline-offset-4'>Trending Coins</h2>
                 <Carousel/>
             </div>
             
